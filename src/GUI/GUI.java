@@ -138,7 +138,8 @@ public class GUI extends JFrame {
 		contentPane.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-					movimientoDisparo(labelDisparo,arg0.getXOnScreen(),arg0.getYOnScreen());
+					movimientoDisparo(labelDisparo,arg0.getXOnScreen(),680);
+					System.out.println("y:" +arg0.getY());
 			}
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
@@ -170,7 +171,7 @@ public class GUI extends JFrame {
 		TimerTask tarea=new TimerTask() {
 			@Override
             public void run() {
-					label.setBounds(x, y+20, x, y+20);
+					label.setBounds(x, y+20, 250,230);
 			}
 		};
 		timer.schedule(tarea, 0, 500);
