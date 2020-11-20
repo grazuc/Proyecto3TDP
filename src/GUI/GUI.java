@@ -111,7 +111,7 @@ public class GUI extends JFrame {
 		labelLimite = new JLabel();
 		
 		//Los añado al panel de entidades
-	//	labelFondo.add(labelInfectado);
+		//labelFondo.add(labelInfectado);
 		//labelFondo.add(labelInfectado2);
 		//labelFondo.add(labelJugador);
 		//labelFondo.add(labelDisparo);
@@ -175,6 +175,7 @@ public class GUI extends JFrame {
 		};
 		timer.schedule(tarea, 0, 500);
 	}
+	
 	
 	private void movimiento(JLabel label) {
 		Timer timer = new Timer();
